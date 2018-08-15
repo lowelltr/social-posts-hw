@@ -5,10 +5,13 @@
         },
         template:`
         <section class ="pastPosts">
-        <p>{{$ctrl.post.title}}</p>
-        <p>{{$ctrl.post.thought}}</p>
-        <p>X</p>
-
+    <ol>
+       <li class="container"> 
+            <p>{{$ctrl.post.title}}</p>
+            <p>{{$ctrl.post.thought}}</p>
+            <p>X</p>
+       </li>
+    </ol>
         
         </section>`
 };

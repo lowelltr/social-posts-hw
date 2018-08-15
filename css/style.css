@@ -32,3 +32,10 @@ post-form {
 .makeUpAClassNameHere {
     display: block;
 }
+button{
+    width: 600px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: white;
+    font-family: 'Dosis', sans-serif;
+}

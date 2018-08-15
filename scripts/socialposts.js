@@ -11,10 +11,15 @@ const socialPost = {
             `,
             controller: function(){
             const vm =this;
-            vm.postList=[ {title: "My thoughts",
-                           thought:"Whats on my Mind" 
-        }
-
+            vm.postList=[ {title: "Inside My Brain",
+                           thought:"Would'nt you like to know"
+                        },
+                           {title:"Wild Thoughts" ,
+                           thought:"Which way is up"
+                        },
+                           {title:"Ooo I think she like me",
+                           thought: "She don't"
+                        },
             ];
             vm.onSubmit=(newPost)=>{
                 vm.postList.unshift(angular.copy(newPost));
