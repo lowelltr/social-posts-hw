@@ -4,7 +4,7 @@ const socialPost = {
             <post-form on-submit="$ctrl.onSubmit(newPost)"></post-form>
             <section>
             <h1>My Thoughts<h1>
-            <button ng-click="">New Thought</button>
+            <button ng-click="$ctrl.pickAFunctionName()">New Thought</button>
             <post ng-repeat="post in $ctrl.postList" post="post"></post>
             </section>
 
@@ -19,7 +19,9 @@ const socialPost = {
             vm.onSubmit=(newPost)=>{
                 vm.postList.unshift(angular.copy(newPost));
             }
-
+            vm.pickAFunctionName = function () {
+                document.querySelector("post-form").classList.toggle("makeUpAClassNameHere")
+            } 
             
             
         
